@@ -4,13 +4,13 @@
 
 ## Linx中安装java开发环境（上）
 
-> 提示：本文会比较长，会分为上下两篇文章。下面目录。
+> 提示：本文会比较长，会分为上下两篇文章。下面是目录。
 
 [TOC]
 
-### 准备工作：
+### 准备工作
 
-1. 本次环境配置中，安装的主要环境有：JDK , Mysql ,Nginx ,  FastDFS , Redis .
+1. 本次环境配置中，安装的主要环境有：JDK , Mysql 
 
 2. 环境版本设置：
 
@@ -19,15 +19,14 @@
 
    - JDK ： jdk-8u151-linux-i586 ；
    - Mysql ：mysql-5.6.35；
-   - Nginx : nginx 1.8 ;
-   - FastDFS : 
-   - Redis : 
 
 3. 环境所需要的安装包需要下载好，并核对操作系统和软件版本是否一致；毕竟很多软件的是无法向上兼容的。
 
 ---
 
-### JDK安装：
+![timg](C:\Users\ASUS\Documents\A_BLOG\记一次Linx中安装java开发环境过程\timg.jpg)
+
+### JDK安装
 
 - 将jdk-8u151-linux-i586.tar.gz使用SSH工具上传至Linx中。
 
@@ -84,7 +83,9 @@
 
 ---
 
-### Mysql安装 :
+![mysql](C:\Users\ASUS\Documents\A_BLOG\记一次Linx中安装java开发环境过程\mysql.jpg)
+
+### Mysql安装 
 
 - 首先看看本地是否已经安装过mysql , 否则以后可能会出一堆问题。
 
@@ -158,16 +159,16 @@
 
   cmake命令参数说明：
 
-​	-DENABLED_LOCAL_INFILE=1 //允许从本地导入数据
+  ​-DENABLED_LOCAL_INFILE=1 //允许从本地导入数据
 
-​	-DCMAKE_INSTALL_PREFIX=/usr/local/mysql   //安装目录
+  ​-DCMAKE_INSTALL_PREFIX=/usr/local/mysql   //安装目录
 
-​	-DINSTALL_DATADIR=/usr/local/mysql/data   //数据库存放目录
+  ​-DINSTALL_DATADIR=/usr/local/mysql/data   //数据库存放目录
 
-​	-DDEFAULT_CHARSET=utf8//使用utf8字符
-​	-DDEFAULT_COLLATION=utf8_general_ci    //校验字符
+  ​-DDEFAULT_CHARSET=utf8//使用utf8字符
+  ​-DDEFAULT_COLLATION=utf8_general_ci    //校验字符
 
-​	-DEXTRA_CHARSETS=all //安装所有扩展字符集
+  ​-DEXTRA_CHARSETS=all //安装所有扩展字符集
 
 - 注：如果要重新编译，需要清除就得对象和编译信息
 
@@ -278,81 +279,6 @@
 
 ---
 
-### Nginx安装：
-
-使用nginx作为代理服务器。
-
-
-
-​	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+到此为止，jdk和mysql安装完毕。可以随便玩啦。该文章是我边装边编辑的，亲测可用。这是环境配置的上篇，接下来还会有一篇文章记录nginx、fastDFS和redis的安装配置。如果需要可以点击这里获取下一篇。
 
 
